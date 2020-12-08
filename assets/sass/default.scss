@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Popins';
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+body, div, article, aside, footer, header, main, nav, section, ul, ol, li, button, figure, picture, hr {
+    display: flex;
+}
+
+body{
+    flex-direction: column;
+    background-color: var(--bg-color);
+    >main{
+        min-height: calc(100vh - 400px);
+    }
+}

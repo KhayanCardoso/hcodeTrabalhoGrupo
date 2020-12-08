@@ -1,0 +1,103 @@
+#header{
+    height: 107px;
+    width: 100%;
+    background-color: var(--green-base);
+    position: relative;
+    z-index: 1;
+    align-items: center;
+    justify-content: space-between;
+    .logo{
+        padding: 0;
+        position: absolute;
+        left: var(--space);
+        bottom: calc(100% / 4);
+        transition: 0.3 ease-in-out;
+    }
+    .btn-open{
+        padding: 0;
+        position: absolute;
+        right: var(--space);
+        bottom: calc(100% / 4);
+        background-color: transparent;
+    }
+    .menu{
+        top: 0;
+        width: 300px;
+        min-height: 100vh;
+        background-color: var(--green-transp);
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 3;
+        position: fixed;
+        right: -300px;
+        border-radius: calc(var(--space) * 3) 0 0 0;
+        transition: 0.3s ease-in-out;
+        nav{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            .logoOpen{
+                position: absolute;
+                height: 70px;
+                width: 73.2px;
+                top: calc(107px / 4);
+                left: var(--space);
+            }
+            .btn-close{
+                position: absolute;
+                top: calc(107px / 4);
+                right: var(--space);
+            }
+            ul{
+                margin: 0;
+                padding: 0;
+                margin-top: calc(176px - 50px);
+                width: 100%;
+                flex-direction: column;
+                
+                li{
+                    color: white;
+                    list-style: none;
+                    justify-content: flex-start;
+                    padding-top: var(--space);
+                    padding-left: var(--space);
+                }
+            }
+            a{
+                text-decoration: none;
+                color: white;
+                cursor: pointer;
+                margin-top: calc(var(--space) * 4);
+            }
+        }
+    }
+    
+}
+
+.open-menu{
+    overflow: hidden;
+    #header{
+        .logo{
+            display: none;
+        }
+        .overlay{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: var(--overlay);
+            z-index: 2;
+        }
+        .menu{
+            right: 0;
+        }
+    }
+}
+
+@media (min-width: 1200px){
+    /*&:last-child{
+        background-color: red;
+    }*/
+}
