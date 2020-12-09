@@ -54,17 +54,21 @@
                 padding: 0;
                 margin-top: calc(176px - 50px);
                 width: 100%;
-                flex-direction: column;
-                
+                flex-direction: column;       
                 li{
                     color: white;
                     list-style: none;
                     justify-content: flex-start;
                     padding-top: var(--space);
                     padding-left: var(--space);
+                    > a{
+                        margin: 0;
+                        text-decoration: none;
+                        color: white;
+                    }
                 }
             }
-            a{
+            .btn-login{
                 text-decoration: none;
                 color: white;
                 cursor: pointer;
