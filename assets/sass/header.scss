@@ -28,7 +28,7 @@
         background-color: var(--green-transp);
         flex-direction: column;
         justify-content: space-between;
-        z-index: 3;
+        z-index: 4;
         position: fixed;
         right: -300px;
         border-radius: calc(var(--space) * 3) 0 0 0;
@@ -99,7 +99,7 @@
             width: 100vw;
             height: 100vh;
             background-color: var(--overlay);
-            z-index: 2;
+            z-index: 3;
         }
         .menu{
             right: 0;

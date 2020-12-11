@@ -1,18 +1,16 @@
 #franchise{
-    flex-direction: column;
-    header{
+    > header{
+        height: 278px;
+        width: 100%;
+        background-image: url('/assets/images/sorriso.webp');
+        background-position: center;
+        background-size: cover;
         flex-direction: column;
-        position: absolute;
-        > picture{
-            z-index: 0;
-            max-height: 257;
-            max-width: 375px;
-        }
+        justify-content: center;
         h1{
             color: white;
-            position: relative;
-            top: 195px;
-            z-index: 1;
+            text-align: center;
+            font-weight: bold;
         }
     }
 }
