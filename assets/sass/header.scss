@@ -10,7 +10,7 @@
         padding: 0;
         position: absolute;
         left: var(--space);
-        bottom: calc(100% / 4);
+        bottom: calc(100% / 5);
         transition: 0.3 ease-in-out;
     }
     .btn-open{
@@ -19,6 +19,7 @@
         right: var(--space);
         bottom: calc(100% / 4);
         background-color: transparent;
+        border: none;
     }
     .menu{
         top: 0;
@@ -46,8 +47,10 @@
             }
             .btn-close{
                 position: absolute;
-                top: calc(107px / 4);
+                top: calc(90px / 4);
                 right: var(--space);
+                border-radius: 50%;
+                border: none;
             }
             ul{
                 margin: 0;
@@ -59,12 +62,18 @@
                     color: white;
                     list-style: none;
                     justify-content: flex-start;
-                    padding-top: var(--space);
-                    padding-left: var(--space);
+                    margin: 0 0 15px 0;
+                    // padding-top: var(--space);
+                    // padding-left: var(--space);
                     > a{
-                        margin: 0;
+                        display: block;
+                        width: 80%;
+                        padding: 5px 0;
+                        margin: 0 auto;
                         text-decoration: none;
                         color: white;
+                        border-bottom: 1px dashed #fff;
+                        text-align: center;
                     }
                 }
             }
@@ -99,6 +108,18 @@
         }
     }
 }
+// Área background-image header
+#box_bgheader {
+    height: 200px;
+    box-sizing: border-box;
+    background-image: url('./../images/bgheader.jpg');
+    background-position: left center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
+
+
 
 @media (min-width: 1200px){
     /*&:last-child{
