@@ -1,6 +1,18 @@
 #franchise{
     flex-direction: column;
-    .franchise_header{
-
+    header{
+        flex-direction: column;
+        position: absolute;
+        > picture{
+            z-index: 0;
+            max-height: 257;
+            max-width: 375px;
+        }
+        h1{
+            color: white;
+            position: relative;
+            top: 195px;
+            z-index: 1;
+        }
     }
 }
