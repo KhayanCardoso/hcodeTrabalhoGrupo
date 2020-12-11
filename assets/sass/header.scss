@@ -47,7 +47,7 @@
             }
             .btn-close{
                 position: absolute;
-                top: calc(90px / 4);
+                top: calc(107px / 4);
                 right: var(--space);
                 border-radius: 50%;
                 border: none;
@@ -63,17 +63,14 @@
                     list-style: none;
                     justify-content: flex-start;
                     margin: 0 0 15px 0;
-                    // padding-top: var(--space);
-                    // padding-left: var(--space);
+                    padding-top: var(--space);
+                    padding-left: var(--space);
                     > a{
                         display: block;
                         width: 80%;
-                        padding: 5px 0;
                         margin: 0 auto;
                         text-decoration: none;
                         color: white;
-                        border-bottom: 1px dashed #fff;
-                        text-align: center;
                     }
                 }
             }
@@ -91,6 +88,7 @@
 .open-menu{
     overflow: hidden;
     #header{
+        border: 1px solid #fff;
         .logo{
             display: none;
         }
