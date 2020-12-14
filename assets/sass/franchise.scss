@@ -1,5 +1,7 @@
 #franchise{
     flex-direction: column;
+    position: relative;
+    top: 107px;
     > header{
         height: 278px;
         width: 100%;
@@ -118,7 +120,9 @@
 }
 
 #contact_franchise{
-
+    position: relative;
+    top: 50px;
+    margin-bottom: 50px;
     form{
         p{
             color: var(--color_gray);
@@ -129,6 +133,12 @@
                 font-weight: 600;
                 transition: color 1s ease-in-out;
             }
+        }
+        button{
+            @include button-green;
+        }
+        textarea{
+            height: 200px;
         }
     }
 }

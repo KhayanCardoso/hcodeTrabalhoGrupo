@@ -1,21 +1,25 @@
 :root{
     --green-base: #09AAC8;
+    --green-hover: #42c4db;
+    --green-active: #0992aa;
     //transparet green
     --green-transp: rgba(5, 176, 208, .95);
     //transparet white
     --white-transp: rgba(255, 255, 255, .7);
     //transparet blue
     --blue-transp: rgba(90, 150, 213, .85);
+
     --blue:#2D4B6B;
     --mustard:#FFBA05;
     --green: #00C86F;
     --red: #F16165;
     --purple: #6B5BE2;
-    --color_white: #FFFFFF;
+    --color_white: #FFF;
     --overlay: #000000BF;
     --color_slid-green: #7ECE68;
     --color_slid_blue: #09AAC8;
     --color_gray: #707070;
+    --color_gray2:  #4e4e4e;
     
     --space: 20px;
     --border-radius: 10px;
