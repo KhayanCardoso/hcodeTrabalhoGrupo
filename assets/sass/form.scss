@@ -1,8 +1,45 @@
-.form{
+form{
+    flex-direction: column;
+    width: 100%;
+    padding: var(--space);
     .fields{
+        flex-direction: column;
         .field{
-            
-        }
+            position: relative;
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: var(--space);
+            label{
+                font-size: 14px;
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                transition: color .03 ease-in-out;
+                z-index: 2;
+            }
+            input, textarea, select{
+                border: var(--color_gray) 1px solid;
+                line-height: 1.5em;
+                padding: 10px;
+                padding-top: 30px;
+                font-size: 15px;
+                color: var(--color_gray);
+                outline: none;
+                border-radius: var(--border-radius);
+                position: relative;
+                z-index: 1;
+                top: 0;
+                transition: border-color .3 ease-in-out;
+                width: 100%;
+                background-color: transparent;
+                &:focus{
+                    border-color: var(--green-base);
+                    + label{
+                        color: var(--green-base);
+                        font-weight: 600;
+                    }
+                }
+            }
+         }
     }
-
 }
