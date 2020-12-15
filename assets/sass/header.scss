@@ -119,20 +119,8 @@
     opacity: 0.9;
     border-bottom: 1px solid #fff;
 }
-// Área Sobre
-#sobre {
-    width: 100%;
-    height: 200px;
-    background-color: var(--blue-transp);
-    padding: 0 var(--space);
-    justify-content: center;
-    align-items: center;
-    h2 {
-        display: flex;
-        font-size: 20px;
-        color: #fff;
-    }    
-}
+
+
 
 
 @media (min-width: 1200px){
