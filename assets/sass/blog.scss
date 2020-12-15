@@ -1,8 +1,103 @@
 #blog{
+    width: 90%;
     position: relative;
     top: 120px;
     margin-bottom: 150px;
+    display: flex;
+    flex-direction: column;
     .post{
+        flex-direction: column;
+        width: 100%;
+        height: 240px;
+        margin: var(--space);
+        border: var(--color_gray) 1px solid;
+        border-radius: var(--border-radius);
+        .content{
+            height: 100%;
+            width: 100%;
+            img{
+                padding: 0;
+                margin: 0;
+                height: 100%;
+                width: 130px;
+            }
+            .text{
+                flex-direction: column;
+                text-align: center;
+                padding: calc(var(--space) / 2);
+                justify-content: center;
+                align-items: center;
+                h2{
+                    color: var(--green-base);
+                    font-weight: 600;
+                    font-size: 14px;
+                }
+                p{
+                    margin-top: calc(var(--space) / 2);
+                    color: var(--green-base-dark);
+                    font-weight: 600;
+                    font-size: 13px;
+                }
+                a{
+                    @include button-green;
+                    position: relative;
+                    top: var(--space);
+                    height: 35px;
+                    width: 80px;
+                    font-size: 13px;
+                    text-decoration: none;
+                }
+            }
+        }
+        
+    }
+    .post2{
+        flex-direction: column;
+        width: 100%;
+        height: 240px;
+        margin: var(--space);
+        border: var(--color_gray) 1px solid;
+        border-radius: var(--border-radius);
+        .content{
+            height: 100%;
+            width: 100%;
+            img{
+                padding: 0;
+                margin: 0;
+                height: 100%;
+                width: 130px;
+            }
+            .text{
+                flex-direction: column;
+                text-align: center;
+                padding: calc(var(--space) / 2);
+                justify-content: center;
+                align-items: center;
+                h2{
+                    color: var(--green-base);
+                    font-weight: 600;
+                    font-size: 14px;
+                }
+                p{
+                    margin-top: calc(var(--space) / 2);
+                    color: var(--green-base-dark);
+                    font-weight: 600;
+                    font-size: 13px;
+                }
+                a{
+                    @include button-green;
+                    position: relative;
+                    top: var(--space);
+                    height: 35px;
+                    width: 80px;
+                    font-size: 13px;
+                    text-decoration: none;
+                }
+            }
+        }
+        
+    }
+    .post3{
         flex-direction: column;
         width: 100%;
         height: 240px;
