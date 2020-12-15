@@ -2,6 +2,7 @@ form{
     flex-direction: column;
     width: 100%;
     padding: var(--space);
+    z-index: 0;
     .fields{
         flex-direction: column;
         .field{
@@ -26,6 +27,7 @@ form{
                 color: var(--color_gray);
                 outline: none;
                 border-radius: var(--border-radius);
+                font-weight: 600;
                 position: relative;
                 z-index: 1;
                 top: 0;
@@ -41,5 +43,8 @@ form{
                 }
             }
          }
+    }
+    button{
+        @include button;
     }
 }

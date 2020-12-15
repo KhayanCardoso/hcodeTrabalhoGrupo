@@ -27,8 +27,8 @@
 <body id="body">
     <header id="header" >
         <div class="overlay"></div>
-            <a href="index.html#home"><img src="assets/images/logoMobile.svg" alt="Logo" class="logo"></a>
-            <button id="btn-open" class="btn-open"><img src="/assets/images/btn_menu.svg"></button>
+            <h1><a href="index.html#home"><img src="./assets/images/logoMobile.svg" alt="Logo" class="logo"></a></h1>
+            <button id="btn-open" class="btn-open"><img src="./assets/images/btn_menu.svg"></button>
             <div class="menu">
                 <nav>
                     <img src="assets/images/logoFooterMobile.svg" alt="Logo Menu" class="logoOpen">
@@ -36,20 +36,22 @@
                         <img src="assets/images/btn_close.svg">
                     </button>
                     <ul>
-                        <li>Home</li>
-                        <li>Sobre</li>
-                        <li>Serviços</li>
-                        <li>Contato</li>
-                        <li>Blog</li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#sobre">Sobre</a></li>
+                        <li><a href="#">Serviços</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="blog.html">Blog</a></li>
                         <li><a href="franchise.html">Seja um franqueado</a></li>
+                        <li><a href="login.html" class="btn_white btn-login">Login</a>
+                        </li>
                     </ul>
-                    <a href="login.html" class="btn_white btn-login">Login</a>
+                    
                 </nav>
             </div>
     </header>
     <section id="franchise">
         <header class="franchise_header">
-           
+           <h1>Venha ser nosso franqueado e sorria junto com seus pacientes</h1>
         </header>
         <div class="slid1">
             <div class="container">
@@ -90,6 +92,9 @@
                     <textarea name="message" id="message"></textarea>
                     <label for="message">Conte-nos um pouco sobre você:</label>
                 </div>
+            </div>
+            <div class="action">
+                <button type="submit">Enviar</button>
             </div>
         </form>
     </section>
