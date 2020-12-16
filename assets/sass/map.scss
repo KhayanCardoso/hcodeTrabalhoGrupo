@@ -1,0 +1,15 @@
+#map {
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 10px;
+    .map {
+        overflow: hidden;
+        background-image: url('./../images/mapa.png');
+        // max-width: 100%;
+        // margin: 10px auto;
+        // border: none;
+        // figure img {
+        //     width: 100%;
+        // }
+    }
+}

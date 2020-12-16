@@ -6,6 +6,7 @@
     width: 100%;
     flex-direction: column;
     h2 {
+        width: 100%;
         background-color: var(--blue);
         padding: var(--space);
         font-weight: 500;
@@ -50,33 +51,56 @@
    }
    //
    .plans {
-        width: 80%;
+        width: 90%;
         margin: var(--space) auto;
-        height: 350px;
+        height: 450px;
         box-sizing: border-box;
         justify-content: center;
         padding: 0 var(--space);
         flex-direction: column;
-        border: 1px solid #111;
+        border: 0.2em solid var(--green-base);
         border-radius: 10px;
         figure {
            display: flex;
+           padding: calc(var(--space) / 4);
+           height: 180px;
            flex-direction: column;
-           border: 1px solid #111;
            figcaption {
-               text-align: center;
-               border: 1px solid #111;
+                text-align: center;
+                font-size: 28px;
+                font-weight: bold;
            }
         }
 
         ul {
-            border: 1px solid #111;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            margin-bottom: calc(var(--space));
             li {
+                font-size: 20px;
+                display: block;
                 text-align: center;
+                font-weight: 900;
+                list-style: square;
             }
+        }
+        p {
+            font-size: 30px;
+            text-align: center;
+            font-weight: 900;
+            text-align: center;
+            color: var(--green-base);
+        }
+        button {
+            @include button-green;
+            font-size: 30px;
+        }
+        span {
+            font-size: 14px;
+            font-weight: 600;
+            text-align: center;
+            color: var(--green-base);
         }
     }
 }
