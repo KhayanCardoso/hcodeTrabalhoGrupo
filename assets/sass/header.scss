@@ -66,19 +66,29 @@
                     padding-top: var(--space);
                     padding-left: var(--space);
                     > a{
-                        display: block;
+                        color: var(--color_white);
+                        font-weight: 600;
+                        display: flex;
                         width: 95%;
-                        margin: 0 auto;
                         text-decoration: none;
-                        color: white;
+                        justify-content: flex-start; 
+                        align-items: center;
+                        text-align: center
                     }
                 }
             }
             .btn-login{
+                @include button-white;
                 text-decoration: none;
-                color: white;
                 cursor: pointer;
+                border-radius: 26px;
                 margin-top: calc(var(--space) * 4);
+                > a{
+                    margin-top: 10px;
+                    justify-content: flex-start; 
+                    align-items: center;
+                    text-align: center;
+                }
             }
         }
     }
@@ -123,6 +133,85 @@
 
 
 @media (min-width: 1200px){
+    .open-menu{
+        overflow: initial;
+        #header{
+            border: none;
+            .logo{
+                display: initial;
+            }
+            .overlay{
+                display: none;
+            }
+            .menu{
+                right: initial;
+            }
+        }
+    }
+    #header{
+        .btn-open{
+            display: none;
+        }
+        .menu{
+            right: initial;
+            position: static;
+            background-color: initial;
+            width: 100%;
+            margin-left: 35%;
+            flex-direction: row;
+            justify-content: space-between;
+            border-radius: initial;
+            align-items: center;
+            nav{
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                .logoOpen{
+                    display: none;
+                }
+                .btn-close{
+                    display: none;
+                }
+                ul{
+                    margin: 0;
+                    padding: 0;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    flex-direction: row;       
+                    li{
+                        color: white;
+                        list-style: none;
+                        justify-content: space-around;
+                        align-items: center;
+                        margin: initial;
+                        padding-top: initial;
+                        padding-left: 0;
+                        padding-right: 10px;
+                        > a{
+                            display: flex;
+                            top: 50%;
+                            width: 100%;
+                            margin: initial;
+                            padding: 10px;
+                            text-align: center;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+                .btn-login{
+                    @include button-white;
+                    height: 45px;
+                    width: 116px;
+                    margin-top: initial;
+                }
+            }
+        }
+
+    }
+    
     /*&:last-child{
         background-color: red;
     }*/
