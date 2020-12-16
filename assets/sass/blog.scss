@@ -20,6 +20,7 @@
                 margin: 0;
                 height: 100%;
                 width: 130px;
+                border-radius: var( --border-radius) 0 0 var(--border-radius);
             }
             .text{
                 flex-direction: column;
@@ -66,6 +67,7 @@
                 margin: 0;
                 height: 100%;
                 width: 130px;
+                border-radius: var( --border-radius) 0 0 var(--border-radius);
             }
             .text{
                 flex-direction: column;
@@ -112,6 +114,7 @@
                 margin: 0;
                 height: 100%;
                 width: 130px;
+                border-radius: var( --border-radius) 0 0 var(--border-radius);
             }
             .text{
                 flex-direction: column;
