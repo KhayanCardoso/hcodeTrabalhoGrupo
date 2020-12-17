@@ -50,7 +50,9 @@
 
    }
    //
-   .plans {
+   .plam{
+       flex-direction: column;
+    .plans {
         width: 90%;
         margin: var(--space) auto;
         height: 450px;
@@ -101,6 +103,30 @@
             font-weight: 600;
             text-align: center;
             color: var(--green-base);
+        }
+    }
+   }
+}
+
+@media (min-width: 1200px){
+    #servicos {
+        .icons {
+            flex-wrap: initial;
+            flex-direction: row;
+            .card {
+                figcaption {
+                    font-weight: 600;
+                }
+            }
+        }
+        .plam{
+            flex-direction: row;
+            width: 100%;
+            .plans {
+                margin: var(--space);
+                max-width: 798px;
+                height: 450px;
+            }
         }
     }
 }

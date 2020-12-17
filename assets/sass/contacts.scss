@@ -1,0 +1,14 @@
+#form{
+    p{
+        color: var(--green-base);
+    }
+}
+
+@media (min-width: 1200px){
+    #form{
+        p{
+            font-size: 18px;
+            color: var(--green-base);
+        }
+    }
+}
