@@ -22,3 +22,32 @@
         }
     }
 }
+
+// Desktop
+@media (min-width: 1200px){
+    #footer{
+        background-color: var(--green-base);
+        height: calc(var( --space) * 8);
+        width: 100%;
+        
+        .footer{
+            width: 100%;
+            height: 100%;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            
+            p{
+                padding: 5px 5px 10px 5px  ;
+                color: var(--white-transp);
+                text-transform: uppercase;
+                font-weight: 900;
+            }
+            .social{
+                a{
+                    padding: 0px 5px;
+                }
+            }
+        }
+    }
+}
