@@ -7,6 +7,8 @@
         font-size: 32px;
         text-align: center;
         color: var(--green-base);
+        font-weight: 600;
+        text-transform: uppercase;
     }
     a {
         text-decoration: none;
@@ -22,7 +24,7 @@
     #login {
         width: 50%;
         height: 40vh;
-        margin: 160px auto;
+        margin: 200px auto;
         .title {
             font-size: 32px;
             text-align: center;
