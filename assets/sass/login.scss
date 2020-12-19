@@ -1,0 +1,145 @@
+#login {
+    width: 50%;
+    margin: 0 auto;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 147px;
+    .title {
+        font-size: 32px;
+        text-align: center;
+        color: var(--green-base);
+    }
+    form{
+        display: block;
+        flex-direction: column;
+        width: 100%;
+        padding: var(--space);
+        z-index: 0;
+        .fields{
+            flex-direction: column;
+            .field{
+                position: relative;
+                flex-direction: column;
+                width: 100%;
+                margin-bottom: var(--space);
+                label{
+                    font-size: 14px;
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    transition: color .03 ease-in-out;
+                    z-index: 0;
+                }
+                input, textarea, select{
+                    border: var(--color_gray) 1px solid;
+                    line-height: 1.5em;
+                    padding: 10px;
+                    padding-top: 30px;
+                    font-size: 15px;
+                    color: var(--color_gray);
+                    outline: none;
+                    border-radius: var(--border-radius);
+                    font-weight: 600;
+                    position: relative;
+                    z-index: 0;
+                    top: 0;
+                    transition: border-color .3s ease-in-out;
+                    width: 100%;
+                    display: block;
+                    background-color: transparent;
+                    &:focus{
+                        border-color: var(--green-base);
+                        + label{
+                            color: var(--green-base);
+                            font-weight: 600;
+                        }
+                    }
+                }
+                textarea {
+                    height: 220px;
+                }
+             }
+        }
+        button{
+            @include button-green;
+        }
+        p {
+            font-size: 15px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: calc(var(--space) /2);
+        }
+    }
+}
+
+@media (min-width: 1200px){
+    #login {
+        width: 50%;
+        height: 40vh;
+        margin: 147px auto;
+        .title {
+            font-size: 32px;
+            text-align: center;
+            color: var(--green-base);
+        }
+        form{
+            display: block;
+            flex-direction: column;
+            width: 100%;
+            padding: var(--space);
+            z-index: 0;
+            .fields{
+                flex-direction: column;
+                .field{
+                    position: relative;
+                    flex-direction: column;
+                    width: 100%;
+                    margin-bottom: var(--space);
+                    label{
+                        font-size: 14px;
+                        position: absolute;
+                        top: 10px;
+                        left: 10px;
+                        transition: color .03 ease-in-out;
+                        z-index: 0;
+                    }
+                    input, textarea, select{
+                        border: var(--color_gray) 1px solid;
+                        line-height: 1.5em;
+                        padding: 10px;
+                        padding-top: 30px;
+                        font-size: 15px;
+                        color: var(--color_gray);
+                        outline: none;
+                        border-radius: var(--border-radius);
+                        font-weight: 600;
+                        position: relative;
+                        z-index: 1;
+                        top: 0;
+                        transition: border-color .3s ease-in-out;
+                        width: 100%;
+                        display: block;
+                        background-color: transparent;
+                        &:focus{
+                            border-color: var(--green-base);
+                            + label{
+                                color: var(--green-base);
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                 }
+            }
+            button{
+                @include button-green;
+            }
+            p {
+                font-size: 15px;
+                font-weight: 600;
+                text-align: center;
+                margin-bottom: calc(var(--space) /2);
+            }
+        }
+    }
+}
+

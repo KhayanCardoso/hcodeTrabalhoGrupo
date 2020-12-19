@@ -37,6 +37,7 @@ form{
                 top: 0;
                 transition: border-color .3s ease-in-out;
                 width: 100%;
+                display: block;
                 background-color: transparent;
                 &:focus{
                     border-color: var(--green-base);
