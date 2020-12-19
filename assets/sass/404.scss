@@ -1,0 +1,15 @@
+#error {
+   height: 550px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   h2 {
+    display: block;
+    border: 1px solid #111;
+    margin-top: 300px;
+   }
+   figure {
+    margin-bottom: 350px;   
+   }
+}
