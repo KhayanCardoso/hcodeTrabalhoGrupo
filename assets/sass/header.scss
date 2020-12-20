@@ -82,10 +82,8 @@
                 @include button-white;
                 text-decoration: none;
                 width: 100%;
-                
-                cursor: pointer;
                 border-radius: var(--border-radius);
-                margin-top: calc(var(--space) * 3);
+                margin-top: calc(var(--space) * 2);
                 > a{
                     justify-content: flex-start; 
                     align-items: center;
@@ -123,7 +121,7 @@
     margin-top: 100px;
     height: 250px;
     box-sizing: border-box;
-    background-image: url('/assets/images/bgheader.jpg');
+    background-image: url('./assets/images/bgheader.jpg');
     background-position: left center;
     background-size: cover;
     background-repeat: no-repeat;
