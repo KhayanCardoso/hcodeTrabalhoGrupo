@@ -118,6 +118,7 @@
 }
 // Área background-image header
 #box_bgheader {
+    max-width: 100%;
     margin-top: 100px;
     height: 250px;
     box-sizing: border-box;
@@ -223,5 +224,17 @@
             }
         }
 
+    }
+    #box_bgheader {
+        max-width: 100%;
+        margin-top: 100px;
+        height: 500px;
+        box-sizing: border-box;
+        background-image: url('../images/bgheader.jpg');
+        background-position: left center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.85;
+        border-bottom: 1px solid #fff;
     }
 }
