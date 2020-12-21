@@ -4,6 +4,8 @@
     margin-bottom: 10px;
     .map {
         overflow: hidden;
-        background-image: url('./../images/mapa.png');
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
     }
 }
